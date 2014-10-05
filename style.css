@@ -1,0 +1,117 @@
+body{
+	background: rgb(238, 238, 238);
+	color: rgb(85, 85, 85)
+}
+#wrapper{
+	width: 960px;
+	background: rgba(226, 226, 226, 0);
+	border-radius: 3px;
+	box-shadow: 0px 3px 15px rgb(116, 115, 115);
+	margin: 20px auto;
+	padding: 30px;
+	text-align: center;
+}
+table{
+	width: 100%
+}
+h1{
+	color: rgb(85, 85, 85);
+	padding: 10px;
+}
+td{
+	font-size: 20px;
+}
+.slide{
+  width: 80px;
+  height: 26px;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slide:after {
+  content: 'OFF';
+  color: #000;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+}
+.slide:before {
+  content: 'ON';
+  color: #27ae60;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+}
+.slide label {
+  display: block;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.slide input[type=checkbox] {
+  visibility: hidden;
+}
+.slide input[type=checkbox]:checked + label {
+  left: 43px;
+}
+button{
+	width: 150px;
+	cursor:pointer;
+  height: 26px;
+  color: #27ae60;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border: none;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+pre{
+	padding: 10px;
+	text-align: left;
+	overflow: auto;
+	color: rgb(153, 240, 119);
+	background: #1d1f21;
+	font-size: 0.8rem;
+	font-family: Menlo, Monaco, monospace;
+
+}
+p{
+	margin-left: 30px
+}
+pre p:first-child{
+	margin: 10px;
+}
+span{
+	color: red
+}
+h2{
+	padding: 10px;
+	font-size: 1rem;
+	color: white;
+	padding: 0;
+	margin: 15px 30px;
+}
+#respuesta{
+	padding: 15px 0 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(57, 135, 172);
+}

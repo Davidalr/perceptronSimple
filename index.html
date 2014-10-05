@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  lang="es-ES">
+<head>
+    <title>Clasificador de monedas</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="author" content=""/>
+    <meta name="contact" content=""/>
+    <link rel=stylesheet href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+	<h1>Clasificador de monedas</h1>
+    <table>
+        <thead>
+            <th></th>
+            <th>Textura</th>
+            <th>Color</th>
+            <th>Tamaño</th>
+        </thead>
+        <tbody>
+            <td>Datos Moneda</td>
+            <td> 
+                    <div class="slide">  
+                      <input type="checkbox" value="None" id="slide0" name="check" checked />
+                      <label for="slide0"></label>
+                    </div>
+       
+            </td>
+            <td> 
+                    <div class="slide">  
+                      <input type="checkbox" value="None" id="slide1" name="check" checked />
+                      <label for="slide1"></label>
+                    </div>
+       
+            </td>
+            <td> 
+                    <div class="slide">  
+                      <input type="checkbox" value="None" id="slide2" name="check" checked />
+                      <label for="slide2"></label>
+                    </div>
+       
+            </td>
+            <td>
+                    <button id="boton"> Clasificar Moneda</button>
+            </td>
+        </tbody>
+    </table>
+    <div id="respuesta">
+        
+    </div>
+    <pre id="pre" rel="Markdown" class=" language-markup"> </pre>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+	inicio();
+    </script>	
+</body>
+</html>
